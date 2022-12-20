@@ -1,0 +1,100 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.container2{
+    display: flex;
+    width: 420px;
+    padding: 20px 0;
+    border-radius: 8px;
+
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#fff 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #0a0b0b, #001217, #001525, #001433, #0c103b);
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+/*------------------------------media queries------------------------------------*/
+
+
+@media only screen and (max-width : 600px){
+
+    .container2{
+        display: none;
+    }
+
+    .container3{
+        display: flex;
+        width: 90px;
+        height: auto;
+        overflow: visible;
+        padding: 0px 0;
+        margin-top: 16px;
+        border: 0;
+        flex-basis: 45%;
+
+
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .circular-progress1{
+        position: relative;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: conic-gradient(#fff 3.6deg, #ededed 0deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .circular-progress1::before{
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: linear-gradient(to right, #0a0b0b, #001217, #001525, #001433, #0c103b);
+    }
+    .progress-value1{
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .text1{
+        
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+
+}

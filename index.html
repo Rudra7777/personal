@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bar.css">
+    <link rel="stylesheet" href="cbar.css">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="index.js"></script>
+
+    <title>Rudra</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1><Span>R</Span>udra
+            </h1>
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I am <span>Rudra</span></h1>
+            <p><span class="auto-type"></span></p>
+        </div>
+    </div>
+</div>
+<!---------------------------------About page-------------------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title1">About Me</h1>
+                <img src="about1.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem Ipsuy of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic htrtr remaining essentially unchanged.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Interests')">Hobbies</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="Interests">
+                    <ul>
+                        <li><span>Web development</span><br>Designing Web pages/Interfaces</li>
+                        <li><span>Competitive Programming</span><br> </li>
+                        <li><span>Gym</span><br>Weight Training</li>
+                        <li><span>Outdoor Sports</span><br>Football<br>Cricket<br>Badminton</li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2008-2019</span><br>Ryan International School(ICSE)<br>92%</li>
+                        <li><span>2019-2021</span><br>Dav International School(CBSE)<br>94% </li>
+                        <li><span>2021-2025</span><br>K.J Somaiya Institute of Engineering and IT<br>B.Tech Computer Engineering</li>
+
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+
+                        <li>Noob</li>
+                        <img class="noob" src="noob.gif" alt="">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------Skills----------------------------------------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title2">Skills</h1>
+            <div class="row skill_row">
+                <div class="about-col-3">
+                    <div class="skill-titles">
+                        <button  class="skill-links btn active-link" onclick="openskill('Frontend');circle_front()"><span>Frontend</span></button>
+                        <button  class="skill-links btn"  onclick="openskill('Backend');circle_back()"><span>Backend</span></button>
+                        <button   class="skill-links btn"  onclick="openskill('Softwares');circle_soft()"><span>Softwares</span></button>
+                    </div>
+                    <div class="container3">
+                        <div class="circular-progress1">
+                            <span class="progress-value1">0%</span>
+                        </div>
+
+                        <span id="text1" class="1">Frontend</span>
+                    </div>
+                </div>
+                <div class="about-col-4">
+                    <div class="skill-contents active-skill" id="Frontend">
+                        <div class="container1">
+                            <div class="skill-box">
+                                <span class="title">HTML</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per html">
+                                        <span class="tooltip">90%</span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skill-box">
+                                <span class="title">CSS</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per css">
+                                        <span class="tooltip">70%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">JavaScript</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per javascript">
+                                        <span class="tooltip">50%</span>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+ <!------------------------------------------------------------------------------------>
+                    <div class="skill-contents" id="Backend">
+                        <div class="container1">
+                            <div class="skill-box">
+                                <span class="title">SQL/DBMS</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per sql">
+                                        <span class="tooltip">60%</span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skill-box">
+                                <span class="title">C/C++</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per c">
+                                        <span class="tooltip">75%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">Python</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per python">
+                                        <span class="tooltip">50%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">.NET</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per net">
+                                        <span class="tooltip">40%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ <!------------------------------------------------------------------------------------>
+
+                    <div class="skill-contents" id="Softwares">
+                        <div class="container1">
+                            <div class="skill-box">
+                                <span class="title">Canva</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per canva">
+                                        <span class="tooltip">75%</span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skill-box">
+                                <span class="title">Adobe Photoshop</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per photoshop">
+                                        <span class="tooltip">60%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">PowerPoint</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per ppt">
+                                        <span class="tooltip">95%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">VN video editor</span>
+
+                                <div class="skill-bar">
+                                    <span class="skill-per vn">
+                                        <span class="tooltip">70%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                    <div class="about-col-5">
+                        <div class="container2">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+
+                            <span id="text" class="text">Frontend</span>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<!------------------------------------------------------------------------------------>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="index.js"></script>
+<script src="cbar.js"></script>
+
+
+</body>
+</html>
