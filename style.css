@@ -444,12 +444,15 @@ transform: scale(1.1);}
 }
 .contact-left p
 {
+    font-size: 18px;
     margin-top: 30px;
 }
 .contact-left p i{
     color: #00a8ff;
-    margin-right: 15px;
-    font-size: 25px;
+    padding-right: 16px;
+    font-size: 24px;
+    margin-left: 0px;
+
 
 }
 .social-icons{
