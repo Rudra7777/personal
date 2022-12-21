@@ -23,11 +23,11 @@
             <h1><Span>R</Span>udra
             </h1>
             <ul id="sidemenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li ><a onclick="closemenu()" href="#header">Home</a></li>
+                <li><a  onclick="closemenu()" href="#about">About me</a></li>
+                <li><a  onclick="closemenu()" href="#skills">Skills</a></li>
+                <li><a  onclick="closemenu()" href="#portfolio">Portfolio</a></li>
+                <li><a  onclick="closemenu()" href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
 
             </ul>
@@ -50,7 +50,7 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lorem Ipsuy of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic htrtr remaining essentially unchanged.</p>
+                <p><span class="name">Rudra Patole</span>, <span>19</span> <br> <span>SY B.tech Computer Engg.</span><br>KJSIEIT' 25<br><br>Chase Excellence & Success Will Follow!</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('Interests')">Hobbies</p>
@@ -96,7 +96,7 @@
             <div class="row skill_row">
                 <div class="about-col-3">
                     <div class="skill-titles">
-                        <button  class="skill-links btn active-link" onclick="openskill('Frontend');circle_front()"><span>Frontend</span></button>
+                        <button  class="skill-links btn  active-link" onclick="openskill('Frontend');circle_front()"><span>Frontend</span></button>
                         <button  class="skill-links btn"  onclick="openskill('Backend');circle_back()"><span>Backend</span></button>
                         <button   class="skill-links btn"  onclick="openskill('Softwares');circle_soft()"><span>Softwares</span></button>
                     </div>
@@ -242,8 +242,66 @@
 
         </div>
     </div>
-
-
+    <!--------------------------------Portfolio------------------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title2">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Google Clone</h3>
+                        <p>January 2022</p>
+                        <a target="_blank"  href="https://rudra7777.github.io/Google-clone/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music PLayer</h3>
+                        <p>March 2022</p>
+                        <a target="_blank" href="https://rudra7777.github.io/MusicPlayer/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Game</h3>
+                        <p>February 2022</p>
+                        <a target="_blank "href="https://rudra7777.github.io/week1-challenge-copy/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn1">See more</a>
+        </div>
+    </div>
+    <!--------------------------------------------contact---------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title2">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>  rudrapatole7@gmail.com</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with <i class="fa-solid fa-heart"></i> by Rudra</p>
+        </div>
+    </div>
 
 
 

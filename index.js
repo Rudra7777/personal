@@ -24,6 +24,8 @@ function opentab(tabname){
 //-------------------------------------------------------------------------------------
 var skilllinks = document.getElementsByClassName("skill-links");
 var skillcontents = document.getElementsByClassName("skill-contents");
+var gg = document.getElementsByClassName("active-link");
+
 
 function openskill(skillname){
     for(skilllink of skilllinks){
@@ -49,4 +51,3 @@ function closemenu(){
 
 
 //----------------------------------------------------------------------------------------
-
