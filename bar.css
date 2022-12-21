@@ -126,11 +126,11 @@
 @media only screen and (max-width : 600px){
 
     .container1{
-       
+
         padding-top: 0px;
         position: relative;
         width: 200px;
-        border-radius: 7px;
+        border-radius: 8px;
         margin: 0 ;
         padding: 0 ;
     }
@@ -138,8 +138,11 @@
         width:180px;
         margin-bottom:8px;
 
+
+
     }
     .skill-box .title{
+
 
 
         display: block;
@@ -148,10 +151,10 @@
         color: #fff;
     }
     .skill-box .skill-bar{
-        overflow: hidden;
+
 
         height: 16px;
-        width: 160px;
+        width: 155px;
         border-radius: 8px;
 
         background:#636e72;
@@ -159,6 +162,8 @@
     .skill-bar .skill-per{
         position: relative;
         display: block;
+        overflow: hidden;
+
         height: 100%;
         width: 90%;
         border-radius: 8px;
@@ -228,29 +233,22 @@
     }
 
     .skill-per .tooltip{
-        position: absolute;
+
         right: 16px;
         top: -4px;
         font-size: 16px;
         font-weight:900;
         color:#000000;
         padding: 0px 0px;
-
+        border: none;
+        border-radius:0;
         background: transparent;
-        z-index: 1;
+        overflow: hidden;
 
     }
+
     .tooltip::before{
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -2px;
-        height: 10px;
-        width: 20px;
-        z-index: -1;
-
-        background-color: transparent;
-        transform: translateX(-50%) rotate(45deg);
-
+        display: none;
+        overflow: hidden;
     }
 }
