@@ -566,13 +566,14 @@ nav ul li{
 
 nav ul .fa-solid{
     position: absolute;
-    top: 25px;
+
     left: 25px;
     cursor: pointer;
 }
 
+
 nav h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .header-text{
@@ -871,4 +872,7 @@ form .btn2{
     background: #00a8ff;
     color: #fff;
 }
+.copyright i{
+
+ margin-top: 10px;  }
 }
