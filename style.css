@@ -752,17 +752,17 @@ nav h1 {
 
         width: 92px;
         margin-bottom: 10px;
-        text-align: center;
+        text-align:center;
         cursor: pointer;
         text-transform: uppercase;
         outline: none;
         overflow: hidden;
         position: relative;
         color: #fff;
-        font-weight: 400;
-        font-size: 10px;
+        font-weight: 800;
+        font-size: 12px;
         background-color: #222;
-        padding: 6px 20px;
+        padding: 4px 10px;
         margin: 0px 0;
         box-shadow: 0 5px 15px rgba(0,0,0,0.20);
       }
@@ -851,12 +851,25 @@ nav h1 {
     margin-top: 20px;
     margin-left: 30px;
 }
+
+.social-icons .fa-instagram{
+    font-weight: 800;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-icons .fa-linkedin{
+
+    color: #0077b5;
+}
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
     margin-left: 30px;
     margin-right:0px;
-    color: #ababab;
+    color: #f5f5f5;
     display: inline-block;
     transition: transform 0.5s;
 }
