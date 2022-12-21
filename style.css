@@ -566,7 +566,7 @@ nav ul li{
 
 nav ul .fa-solid{
     position: absolute;
-
+    top: 25px;
     left: 25px;
     cursor: pointer;
 }
@@ -875,4 +875,8 @@ form .btn2{
 .copyright i{
 
  margin-top: 10px;  }
+
+ #msg{
+    margin-left: 40px;
+ }
 }
